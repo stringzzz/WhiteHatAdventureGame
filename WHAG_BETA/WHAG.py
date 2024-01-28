@@ -72,12 +72,6 @@ if (user_file.readline() == ""):
 	updateUserFile()
 	targetpass = str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
 	
-	####FOR TESTING####
-	cheat_file = open("cheatfile_iamroot.txt", "w")
-	cheat_file.write(targetpass)
-	cheat_file.close()
-	####FOR TESTING####
-	
 	targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 	hash_file = open("iamroothash.txt", "w")
 	hash_file.write(targethash)
@@ -182,12 +176,6 @@ if (onLevel == 1):
 	interests = ["Spongebob Squarepants", "Fairly Oddparents", "My Little Pony", "Adventure Time", "Animaniacs"]
 	if (hashLevel == 0):
 		targetpass = "".join(interests[2].split(" ")).lower() + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_brony55.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
 		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("brony55hash.txt", "w")
@@ -325,12 +313,6 @@ if (onLevel == 2):
 	if (hashLevel == 1):
 		targetpass = "".join((random.choice(interests).lower().split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9))
 		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_thechief506.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
-		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("thechief506hash.txt", "w")
 		hash_file.write(targethash)
@@ -458,12 +440,6 @@ if (onLevel == 3):
 	drunkInterests = ["buuuudwizer", "Capin moregon", "Javk danyuls", "gray gus", "cornona", "tekeela", "Moanshinw"]
 	if (hashLevel == 2):
 		targetpass = "".join((random.choice(interests).split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_drunk4life.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
 		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("drunk4lifehash.txt", "w")
@@ -604,12 +580,6 @@ if (onLevel == 4):
 		interest_file.close()
 		
 		targetpass = openInterests[len(openInterests) - 1].lower() + "".join((random.choice(privateInterests).lower().split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_Raiders557.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
 		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("Raiders557hash.txt", "w")
@@ -829,12 +799,6 @@ if (onLevel == 5):
 			targetpass += catsForPass[rnum]
 			del catsForPass[rnum]
 		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_CrazyCatLady853.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
-		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("CrazyCatLady853hash.txt", "w")
 		hash_file.write(targethash)
@@ -1045,12 +1009,6 @@ if (onLevel == 6):
 		interest_file.close()
 	
 		targetpass = "".join((random.choice(openInterests).lower().split(" "))) + "".join((random.choice(privateInterests).lower().split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_monkeystinks52.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
 		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("monkeystinks52hash.txt", "w")
@@ -1278,12 +1236,6 @@ if (onLevel == 7):
 		rnum2 = random.randint(0, len(openInterests_jb) - 1)
 		targetpass_jb = "".join(openInterests_jb[rnum1].lower().split(" ")) + "".join(openInterests_jb[rnum2].lower().split(" ")) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
 		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_johnnyboy082.txt", "w")
-		cheat_file.write(targetpass_jb)
-		cheat_file.close()
-		####FOR TESTING####
-		
 		targethash_jb = hashlib.md5(targetpass_jb.encode('utf-8')).hexdigest()
 		hash_file = open("johnnyboy082hash.txt", "w")
 		hash_file.write(targethash_jb)
@@ -1299,12 +1251,6 @@ if (onLevel == 7):
 		interest_file.close()
 	
 		targetpass_ff = jb.lower() + "".join((random.choice(openInterests_ff).lower().split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_friendsforever28.txt", "w")
-		cheat_file.write(targetpass_ff)
-		cheat_file.close()
-		####FOR TESTING####
 		
 		targethash_ff = hashlib.md5(targetpass_ff.encode('utf-8')).hexdigest()
 		hash_file = open("friendsforever28hash.txt", "w")
@@ -1699,12 +1645,6 @@ if (onLevel == 8):
 		
 		targetpass = "".join((random.choice(openInterests).lower().split(" "))) + "".join((random.choice(privateInterests).lower().split(" "))) + "".join((random.choice(secretInterests).lower().split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
 		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_redeye36.txt", "w")
-		cheat_file.write(targetpass)
-		cheat_file.close()
-		####FOR TESTING####
-		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("redeye36hash.txt", "w")
 		hash_file.write(targethash)
@@ -2070,12 +2010,6 @@ if (onLevel == 9):
 		interest_file.close()
 	
 		targetpass = "".join((random.choice(openInterests).lower().split(" "))) + "".join((random.choice(privateInterests).lower().split(" "))) + "".join((random.choice(secretInterests).lower().split(" "))) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9))
-		
-		####FOR TESTING####
-		cheat_file = open("cheatfile_TheBoss0.txt", "w")
-		cheat_file.write(targetpass + " Pet: " + a2 + " Partner: " + a4 + " Car: " + a6)
-		cheat_file.close()
-		####FOR TESTING####
 		
 		targethash = hashlib.md5(targetpass.encode('utf-8')).hexdigest()
 		hash_file = open("TheBoss0hash.txt", "w")
