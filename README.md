@@ -17,7 +17,7 @@ Use all the information you gather to build wordlists, and crack their password.
 While you can output the password hash to the command line while in the chat, it is easier.
  to just use the appropriate hash '.txt' file with a password cracker
 
-If using '//hint', "W's" stands for "Words", while "'s" of course stands for numbers.
+If using '//hint', "W's" stands for "Words", while "#'s" of course stands for numbers.
 This shows the pattern for the current password
 
 I decided it would be really annoying to have to start the whole game over if you lose the trust of the
