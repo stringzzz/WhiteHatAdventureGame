@@ -2,12 +2,13 @@ WHAG (White Hat Adventure Game)
 
 By stringzzz, Ghostwarez Co.
 
-Date complete: 01-27-2024 (BETA Version)
-
-BETA Version not deeply tested. After working out all the test cases, a FULL version will be released soon
+Date complete: 01-28-2024 (FULL Version)
 
 Note: Some kind of password cracker that can work with md5 hashes is needed for this game.
  You may use any you like, though I would reccomend hashcat.
+ 
+ If using hashcat, it can be used like this: hashcat -m 0 -a 0 hashfile wordlistfile
+ 
  Also, a python script called "GWEN0p03.py" will be provided with this game to help in creating wordlists
 
 It is a game to practice social engineering and password cracking legally.
