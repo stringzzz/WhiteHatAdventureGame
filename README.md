@@ -15,7 +15,7 @@ It is a game to practice social engineering and password cracking legally.
 The passwords and chatbots become more complex as you move up in levels.
 In many cases, earning the target's trust is key to getting them to reveal more of their information.
 Use all the information you gather to build wordlists, and crack their password.
-While you can output the password hash to the command line while in the chat, it is easier.
+While you can output the password hash to the command line while in the chat, it is easier
  to just use the appropriate hash '.txt' file with a password cracker
 
 If using '//hint', "W's" stands for "Words", while "#'s" of course stands for numbers.
