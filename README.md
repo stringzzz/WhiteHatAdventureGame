@@ -5,7 +5,7 @@ By stringzzz, Ghostwarez Co.
 Date complete: 01-28-2024 (FULL Version)
 
 Note: Some kind of password cracker that can work with md5 hashes is needed for this game.
- You may use any you like, though I would reccomend hashcat.
+ You may use any you like, though I would recommend hashcat.
  
  If using hashcat, it can be used like this: hashcat -m 0 -a 0 hashfile wordlistfile
  
