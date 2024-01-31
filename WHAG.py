@@ -23,7 +23,7 @@
 #Note: Some kind of password cracker that can work with md5 hashes is needed for this game.
 # You may use any you like, though I would reccomend hashcat.
 # If using hashcat, it can be used like this: hashcat -m 0 -a 0 hashfile wordlistfile
-# Also, a python script called "GWEN0p03.py" will be provided with this game to help in creating wordlists
+# Also, a python script called "GWEN0p04.py" will be provided with this game to help in creating wordlists
 
 #It is a game to practice social engineering and password cracking legally
 #The passwords and chatbots become more complex as you move up in levels
