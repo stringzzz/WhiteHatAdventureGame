@@ -17,6 +17,7 @@
 #WHAG (White Hat Adventure Game) FULL Version
 #By stringzzz, Ghostwarez Co.
 #Date complete: 01-28-2024
+#Mistake found: 01-30-2024 (One cat name left out in level 5, fixed)
 
 #Note: Some kind of password cracker that can work with md5 hashes is needed for this game.
 # You may use any you like, though I would reccomend hashcat.
@@ -780,21 +781,27 @@ if (onLevel == 5):
 	cats = ["Fluffy", "Tigger", "Garfield", "Bob", "Tom", "Dmitri", "Buttercup", "Lilith", "Oreo", "Olga"]
 	catActions = ["playing with", "holding", "cuddling with", "grooming", "feeding", "cooking for", "hanging out with", "petting", "talking to"]
 	catTypes = {"Fluffy": "is so hairy!", "Tigger": "is so bouncy!", "Garfield": "is so lazy", "Bob": "is so laid back", "Tom": "is such a hunter", "Dmitri": "is so cuddly", "Buttercup": "is so cute", "Lilith": "is so full of attitude", "Oreo": "is such big eater", "Olga": "is so grouchy"}
-	catsForPass = cats[:]
 	currentCats = []
-	for word in range(0, 7):
-		rnum = random.randint(0, len(cats) - 1)
-		currentCats.append(cats[rnum])
-		del cats[rnum]
 	pastCats = []
-	for word in range(0, 2):
-		rnum = random.randint(0, len(cats) - 1)
-		pastCats.append(cats[rnum])
-		del cats[rnum]
-	for name in pastCats:
-		catTypes[name] = catTypes[name].replace("is", "was")
-		
+	
 	if (hashLevel == 4):
+		catsForPass = cats[:]
+		interest_file = open("interests_CrazyCatLady853.txt", "w")
+		for word in range(0, 8):
+			rnum = random.randint(0, len(cats) - 1)
+			currentCats.append(cats[rnum])
+			interest_file.write(cats[rnum] + "&&&&")
+			del cats[rnum]
+
+		for word in range(0, 2):
+			rnum = random.randint(0, len(cats) - 1)
+			pastCats.append(cats[rnum])
+			interest_file.write(cats[rnum] + "&&&&")
+			del cats[rnum]
+		for name in pastCats:
+			catTypes[name] = catTypes[name].replace("is", "was")
+		interest_file.close()
+		
 		targetpass = ""
 		for name in range(0, 10):
 			rnum = random.randint(0, len(catsForPass) - 1)
@@ -807,6 +814,18 @@ if (onLevel == 5):
 		hash_file.close()
 		hashLevel += 1
 		updateUserFile()
+	else:
+		#Restore previously generated lists of interests
+		interest_file = open("interests_CrazyCatLady853.txt", "r")
+		tempInterests = interest_file.readline().split("&&&&")
+		interest_file.close()
+		if (tempInterests[len(tempInterests) - 1] == ""):
+			del tempInterests[len(tempInterests) - 1]
+		for n in range(0, len(tempInterests)):
+			if (n >= 8):
+				pastCats.append(tempInterests[n])
+			else:
+				currentCats.append(tempInterests[n])
 
 	#Main prompt loop Level 5	
 	user_input = "none"
