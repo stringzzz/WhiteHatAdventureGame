@@ -37,6 +37,6 @@ NOTE: I realize that you could just easily edit the script to output the passwor
  print("You won the whole game!") :P 
 
  After playing through the entire game minus the final level, I have to say I'm a bit dissapointed with it. 
- You can typically just keep repeating the same two questions in alternation to get the target's interest, making it highly unrealistic.
+ You can typically just keep repeating the same two questions in alternation to get the target's interests, making it highly unrealistic.
  I'm considering taking a lot of extra time to make a 2nd game, with much more realistic situations and chatbots.
  At least one thing, the passwords themselves are somewhat realistic. Maybe it's just too easy for me since I created the game?
