@@ -4,6 +4,9 @@ By stringzzz, Ghostwarez Co.
 
 Date complete: 01-28-2024 (FULL Version)
 
+Here is a link to my YT video demonstrating Level 0-8 in the game:
+https://youtu.be/Vmfg5speimk
+
 Note: Some kind of password cracker that can work with md5 hashes is needed for this game.
  You may use any you like, though I would recommend hashcat.
  
